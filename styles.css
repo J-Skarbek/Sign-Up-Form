@@ -81,6 +81,28 @@ p {
     background-image: url("./assets/leaves.jpg");
     background-size: cover;
     background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-side p {
+    color: #fff;
+    font-size: 5rem;
+    font-weight: 800;
+}
+
+#odin-logo {
+    width: 25%;
+}
+
+.logo-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: rgba(0,0,0,.55);
 }
 
 .right-side {
