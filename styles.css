@@ -45,6 +45,7 @@ table {
 :root {
     --brand-green: #596D48;
     --input-borders: #E5E7EB;
+    --off-white: #f9fafb;
 }
 
 
@@ -64,4 +65,28 @@ h6 {
 p {
     font-family: 'Libre Franklin', sans-serif;
     font-weight: 400;
+}
+
+.project-container {
+    width: 1400px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(115px, 1fr));
+    grid-template-rows: repeat(6, minmax(200px, 1fr)); 
+}
+
+.left-side {
+    grid-column: 1 / span 4;
+    grid-row: 1 / span 6;
+    background-image: url("./assets/leaves.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.right-side {
+    grid-column: 5 / span 8;
+    grid-row: 1 / span 6;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--off-white, #fff);
 }
