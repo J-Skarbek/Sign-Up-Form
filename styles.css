@@ -71,6 +71,14 @@ p {
     font-weight: 400;
 }
 
+a {
+    color: var(--brand-green);
+}
+
+a:hover {
+    color: #000;
+}
+
 .project-container {
     width: 1400px;
     margin: 0 auto;
@@ -114,7 +122,8 @@ p {
     padding-top: 22.5%;
 }
 
-.text1 {
+.text1,
+.text2 {
     padding: 2%;
 }
 
@@ -125,13 +134,35 @@ div > p {
     padding-right: 25%;
 }
 
-.text2 {
-    padding: 2%;
-}
-
-
 .form-container {
-    padding: 2%;
+    padding: 2% 4%;
     background-color: var(--white);
     box-shadow: 0px 0px 50px var(--input-borders);
+}
+
+.input-form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px 50px;
+    width: 60%;
+}
+
+input {
+    font-size: 1.2rem;
+}
+
+#submit-btn {
+    color: var(--off-white);
+    background-color: var(--brand-green);
+    padding: 2% 10%;
+    box-shadow: 5px 4px 4px var(--input-borders);
+    border-radius: 25px;
+    border: none;
+}
+
+#submit-btn:hover {
+    color: var(--brand-green);
+    background-color: var(--off-white);
 }
