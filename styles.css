@@ -79,13 +79,40 @@ a:hover {
     color: #000;
 }
 
-input:invalid {
-    border-color: red;
-  }
+input {
+    font-size: 1.0rem;
+    padding: 2% 2%;
+    box-shadow: 5px 4px 4px var(--input-borders);
+    border-radius: 12px;
+}
 
-/* input:valid {
-    border-color: green !important;
-} */
+#submit-btn {
+    color: var(--off-white);
+    background-color: var(--brand-green);
+    padding: 2% 10%;
+    border: none;
+}
+
+#submit-btn:hover {
+    color: var(--brand-green);
+    background-color: var(--off-white);
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="tel"]:focus {
+    border-color: aquamarine;
+}
+
+
+input:valid {
+    border-color: var(--brand-green);
+}
+
+.error {
+    border-color: red;
+}
 
 .project-container {
     width: 1400px;
@@ -156,29 +183,11 @@ div > p {
     box-shadow: 0px 0px 50px var(--input-borders);
 }
 
-.input-form {
+.input-form fieldset {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
     gap: 20px 50px;
-    width: 60%;
-}
-
-input {
-    font-size: 1.2rem;
-}
-
-#submit-btn {
-    color: var(--off-white);
-    background-color: var(--brand-green);
-    padding: 2% 10%;
-    box-shadow: 5px 4px 4px var(--input-borders);
-    border-radius: 25px;
-    border: none;
-}
-
-#submit-btn:hover {
-    color: var(--brand-green);
-    background-color: var(--off-white);
+    width: 70%;
 }
