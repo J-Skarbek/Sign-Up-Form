@@ -79,6 +79,14 @@ a:hover {
     color: #000;
 }
 
+input:invalid {
+    border-color: red;
+  }
+
+/* input:valid {
+    border-color: green !important;
+} */
+
 .project-container {
     width: 1400px;
     margin: 0 auto;
